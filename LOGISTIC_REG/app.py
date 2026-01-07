@@ -34,11 +34,13 @@ body {
 }
 .result-box {
     background-color: #d7ffe1;
+    color: #0a3d1c;   /* dark green text */
     padding: 15px;
     border-radius: 12px;
     text-align: center;
     font-weight: bold;
 }
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -170,3 +172,4 @@ Prediction: {"Likely to Churn" if pred==1 else "Likely to Stay"}<br>
 Churn Probability: {prob:.2f}
 </div>
 """, unsafe_allow_html=True)
+
