@@ -14,7 +14,7 @@ st.title("📉 Customer Churn Prediction")
 # -----------------------------
 # Load data
 # -----------------------------
-df = pd.read_csv("Telco-Customer-Churn.csv")
+df = pd.read_csv("WA_Fn-UseC_-Telco-Customer-Churn.csv")
 
 df["TotalCharges"] = pd.to_numeric(df["TotalCharges"], errors="coerce")
 df.dropna(inplace=True)
@@ -98,3 +98,4 @@ ConfusionMatrixDisplay.from_predictions(
     ax=ax
 )
 st.pyplot(fig)
+
